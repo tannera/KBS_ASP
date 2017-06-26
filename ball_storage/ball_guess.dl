@@ -1,0 +1,1 @@
+filled(C,R,1) v filled(C,R,2) v filled(C,R,3) v filled(C,R,4) v vide(C,R) :- storage(S,C,R).

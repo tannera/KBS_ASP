@@ -1,0 +1,14 @@
+% check X balance
+
+:- container(C,_,Y,Z), xsum(Y,Z,S), S > #count{X: loaded(X,Y,Z)}.
+:- container(C,_,Y,Z), xsum(Y,Z,S), S < #count{X: loaded(X,Y,Z)}.
+
+% check Y balance
+
+:- container(C,X,_,Z), ysum(X,Z,S), S > #count{Y: loaded(X,Y,Z)}.
+:- container(C,X,_,Z), ysum(X,Z,S), S < #count{Y: loaded(X,Y,Z)}.
+
+% check Z balance
+
+:- container(C,X,Y,_), zsum(X,Y,S), S > #count{Z: loaded(X,Y,Z)}.
+:- container(C,X,Y,_), zsum(X,Y,S), S < #count{Z: loaded(X,Y,Z)}.

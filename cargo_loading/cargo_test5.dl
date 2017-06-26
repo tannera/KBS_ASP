@@ -1,0 +1,34 @@
+% Test 5 - Check balance and gravity constraints within a 2x4x2 cuboid so that gravity is considered
+
+left(x1,x2).
+below(y1,y2).
+below(y2,y3).
+below(y3,y4).
+below(z1,z2).
+
+
+container(c1,x2,y1,z1).
+container(c1,x2,y1,z2).
+container(c2,x1,y1,z1).
+container(c2,x1,y1,z2).
+
+container(c3,x1,y2,z1).
+container(c3,x1,y3,z1).
+container(c4,x1,y2,z2).
+container(c4,x1,y3,z2).
+
+container(c5,x2,y2,z1).
+container(c5,x2,y3,z1).
+container(c6,x2,y2,z2).
+container(c6,x2,y3,z2).
+
+container(c7,x1,y4,z1).
+container(c7,x2,y4,z1).
+container(c8,x1,y4,z2).
+container(c8,x2,y4,z2).
+
+
+zsum(x1,y1,1). zsum(x2,y1,2).
+zsum(x1,y2,2). zsum(x2,y2,2).
+zsum(x1,y3,2). zsum(x2,y3,2).
+zsum(x1,y4,2). zsum(x2,y4,1).

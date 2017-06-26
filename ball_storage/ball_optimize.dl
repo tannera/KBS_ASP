@@ -1,0 +1,2 @@
+vide(C,R) :- storage(S,C,R), not filled(C,R,1), not filled(C,R,2), not filled(C,R,3), not filled(C,R,4).
+ :~ vide(C,R). [1:]

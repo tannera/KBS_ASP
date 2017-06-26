@@ -1,0 +1,6 @@
+colsucc(1,2). rowsucc(1,2).
+
+storage(1,1,1). storage(2,1,2). storage(3,2,1). storage(4,2,2).
+
+rowweight(1,3). rowweight(2,3).
+colweight(1,3). colweight(2,3).

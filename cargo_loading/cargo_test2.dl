@@ -1,0 +1,18 @@
+% Test 2 - Check gravity constraint in same cube as in test 1
+
+left(x1,x2).
+below(y1,y2).
+
+
+container(c1,x2,y1,z1).
+container(c1,x2,y2,z1).
+container(c1,x1,y2,z1).
+container(c2,x1,y1,z1).
+
+
+xsum(y1,z1,1). xsum(y2,z1,2).
+
+ysum(x1,z1,2). ysum(x2,z1,1).
+
+zsum(x1,y1,1). zsum(x1,y2,1).
+zsum(x2,y1,0). zsum(x2,y2,1).

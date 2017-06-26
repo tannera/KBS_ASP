@@ -1,0 +1,1 @@
+:- container(C,X,Y1,Z), container(C,X,Y2,Z), ysucc(Y1,Y2), loaded(X,Y2,Z), not loaded(X,Y1,Z).

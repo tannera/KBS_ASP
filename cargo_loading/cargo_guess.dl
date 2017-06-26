@@ -1,0 +1,1 @@
+loaded(X,Y,Z) | empty(X,Y,Z) :- container(C,X,Y,Z).

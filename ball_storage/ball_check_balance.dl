@@ -1,0 +1,7 @@
+row(X) :- rowsucc(X,Y).
+row(Y) :- rowsucc(X,Y).
+ :- row(R), rowweight(R,RowTot), not #sum{W,C: filled(C,R,W)} = RowTot.
+
+column(X) :- colsucc(X,Y).
+column(Y) :- colsucc(X,Y).
+ :- column(C), colweight(C,ColTot), not #sum{W,R: filled(C,R,W)} = ColTot.
